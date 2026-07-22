@@ -33,6 +33,9 @@ webrtc-cpp-remote-control/
 ├─ lib/
 │  ├─ libwebrtc.dll                  Windows x64 WebRTC 运行库
 │  └─ libwebrtc.dll.lib              MSVC 导入库
+├─ packages/
+│  ├─ RemoteControl_rtc_x64_Full_20260722_GitHub.zip  完整运行依赖包
+│  └─ SHA256SUMS.txt                 ZIP 校验值
 └─ RemoteControl_rtc/
    ├─ RemoteControl_rtc.slnx         Visual Studio 解决方案
    ├─ RemoteControl_rtc/             MFC 客户端源码和工程
@@ -67,7 +70,7 @@ flowchart LR
 3. 构建 `RemoteControl_rtc`。
 4. 保证 `lib/libwebrtc.dll` 位于生成的 EXE 同目录后运行。
 
-Release 配置静态链接 MFC 和 MSVC C/C++ 运行库，目标电脑通常不需要单独安装 Visual C++ Runtime。完整可运行包请从仓库的 **Releases** 页面下载。
+Release 配置静态链接 MFC 和 MSVC C/C++ 运行库，目标电脑通常不需要单独安装 Visual C++ Runtime。可从 [packages 目录](packages/) 直接下载完整运行包。
 
 ## 构建信令服务器
 
@@ -104,6 +107,10 @@ $env:REMOTE_CONTROL_TURN_PASSWORD = '<your-turn-password>'
 | TURN Relay | 服务器配置的 UDP 端口范围 | 实际媒体中继 |
 
 ## 运行与发布包
+
+下载：[RemoteControl_rtc_x64_Full_20260722_GitHub.zip](packages/RemoteControl_rtc_x64_Full_20260722_GitHub.zip)
+
+SHA-256：`83BF2A11A6B582CBE489A84FF2D9B723561B6A34FA0FF943CE06789557A804CA`
 
 完整依赖包包含：
 
