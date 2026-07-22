@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="RemoteControl_rtc/RemoteControl_rtc.vcxproj" />
+  <Project Path="SignalingServer/SignalingServer.vcxproj" />
+</Solution>

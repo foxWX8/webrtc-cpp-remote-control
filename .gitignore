@@ -1,0 +1,44 @@
+# Visual Studio / MSBuild
+.vs/
+**/.vs/
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+**/ARM64/
+**/*.user
+**/*.suo
+**/*.aps
+**/*.VC.db
+**/*.VC.opendb
+**/*.tlog
+**/*.obj
+**/*.pch
+**/*.pdb
+**/*.ilk
+**/*.iobj
+**/*.ipdb
+**/*.recipe
+**/*.lastbuildstate
+**/*.FileListAbsolute.txt
+
+# CMake
+**/build/
+**/CMakeFiles/
+**/CMakeCache.txt
+
+# Runtime output
+recordings/
+logs/
+*.mp4
+*.log
+
+# Local secrets
+.env
+.env.*
+!.env.example
+config/remote-control.env
+
+# Packages are published as GitHub Release assets
+dist/
+*.zip
